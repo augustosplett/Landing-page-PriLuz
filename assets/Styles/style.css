@@ -2,6 +2,9 @@
     margin: 0cm;
     padding: 0cm;
 }
+html{
+    font-size: 62,5%;
+}
 
 body
 {
@@ -46,3 +49,18 @@ section{
     width: 5vh;
     height: 5vh;
   }
+
+.text-card{
+    background-color: #ededed;
+    margin: 3vw;
+    padding: 3vw;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.card-text{
+    margin: 1vh;
+    font-size: 1.2rem;
+}
