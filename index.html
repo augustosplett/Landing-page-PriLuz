@@ -7,6 +7,7 @@
     <title>Yoga com Pri Luz</title>
     <link rel="stylesheet" href="assets/Styles/style.css">
     <link rel="stylesheet" href="assets/Styles/menu.css">
+    <script src="assets/scripts/script.js"></script>
 </head>
 <body>
     <header>
@@ -15,34 +16,21 @@
         <!--        MIT License        -->
         <nav role="navigation">
             <div id="menuToggle">
-            <!--
-            A fake / hidden checkbox is used as click reciever,
-            so you can use the :checked selector on it.
-            -->
-            <input type="checkbox" />
+
+            <input type="checkbox" id="menu-check" />
             
-            <!--
-            Some spans to act as a hamburger.
-            
-            They are acting like a real hamburger,
-            not that McDonalds stuff.
-            -->
             <span></span>
             <span></span>
             <span></span>
             
-            <!--
-            Too bad the menu has to be inside of the button
-            but hey, it's pure CSS magic.
-            -->
             <ul id="menu">
-                <li><a href="#need-to-know">O que preciso saber</a></li>
-                <li><a href="#schedule">Horarios</a></li>
-                <li><a href="#programs">Programas</a></li>
-                <li><a href="#about-programs">Sobre os Programas</a></li>
-                <li><a href="#moon-practices">Práticas da Lua</a></li>
-                <li><a href="#moon-calendar">Calendário Lunar</a></li>
-                <li><a href="#practice-instructions">Instruções para prática</a></li>
+                <li><a href="#need-to-know" onclick="fechar()">O que preciso saber</a></li>
+                <li><a href="#schedule" onclick="fechar()">Horarios</a></li>
+                <li><a href="#programs" onclick="fechar()">Programas</a></li>
+                <li><a href="#about-programs" onclick="fechar()">Sobre os Programas</a></li>
+                <li><a href="#moon-practices" onclick="fechar()">Práticas da Lua</a></li>
+                <li><a href="#moon-calendar" onclick="fechar()">Calendário Lunar</a></li>
+                <li><a href="#practice-instructions" onclick="fechar()">Instruções para prática</a></li>
             </ul>
             </div>
             <img class="logo"src="assets/img/logo.svg" alt="logo" >
@@ -53,7 +41,7 @@
 
         <section id="need-to-know"> 
             <div class="text-card">
-                <h2 class="card-title">O QUE VOCÊ PRECISA SABER:</h2>
+                <h2 class="card-title">O que você precisa saber</h2>
                 <p class="card-text">Praticar Yoga vai além de movimentar o corpo.</p>
                 <p class="card-text">Essa prática utiliza o corpo como uma ferramenta para alcançar um estado de maior atenção,trabalhando de forma integral corpo físico e mental.</p>
                 <p class="card-text">É um caminho que te conduz a um estado de contentamento.</p> 
@@ -122,17 +110,17 @@
         <section id="about-programs">
             <div class="text-card">
                 <h2 class="card-title">Tipos de Prática</h2>
-                <h3 >PRÁTICA INDIVIDUAL</h3>
+                <h3 class="card-subtitle">PRÁTICA INDIVIDUAL</h3>
                 <p class="card-text">Nenhum horário da grade te atende? Também atendo individual, horários e valores a combinar.</p>
     
-                <h3>PRÁTICA PRESENCIAL</h3>  
+                <h3 class="card-subtitle">PRÁTICA PRESENCIAL</h3>  
                 <p class="card-text">Pequenos grupos e individual no local que você escolher, horários e valores a combinar</p>
                 
-                <h3>EVENTOS</h3>
+                <h3 class="card-subtitle">EVENTOS</h3>
                 <p class="card-text"> Você quer oferecer práticas de Yoga para seus clientes? Me chama e vamos botar essa galera a praticar!</p>
                 <p class="card-text">Quer juntar amigos, familiares ou colegas de trabalho, para terem um momento de pausa e conexão? Também posso ministrar uma prática no seu evento, que tal?</p>
                 
-                <h3>PARCERIAS</h3>
+                <h3 class="card-subtitle">PARCERIAS</h3>
                 <p class="card-text"> Você quer oferecer práticas de Yoga para seus clientes? Me chama e vamos botar essa galera a praticar!</p>
             </div>
         </section>
@@ -152,7 +140,7 @@
         <section id="moon-calendar">
             <div class="text-card">
 
-                <h2>Calendário Lunar</h2>
+                <h2 class="card-title">Calendário Lunar</h2>
                 <p class="card-text"> Saiba qual fase da Lua estamos para saber como será a prática da semana!</p>
             </div>
         </section>
@@ -160,7 +148,7 @@
         <section id="practice-instructions">
             <div class="text-card">
                 
-                <h2 class="card-title">INSTRUÇÕES PARA A PRÁTICA</h2>
+                <h2 class="card-title">Instruções para prática</h2>
                 <ul>
                     <li>Caso não tenha um tapete de Yoga, você pode utilizar uma toalha de banho ou fazer em cima de um tapete convencional</li>
                     <li>É indicado jejum de pelo menos 1h, mas caso não seja possível, priorize comer algo mais leve</li>

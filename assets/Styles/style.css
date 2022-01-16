@@ -23,8 +23,6 @@ nav{
     width: 100%;
     position: fixed;
     top: 0;
-    text-align: right;
-    margin: 0;
 }
 .logo{
     position: fixed;
@@ -63,11 +61,21 @@ section{
     margin: 3vw;
     padding: 3vw;
     min-height: 80vh;
+    border-radius: 15px;
 }
 
 .card-title{
     text-align: center;
     margin-bottom: 3vh;
+    margin-top: 3vh;
+    font-size: 1.6rem;
+
+}
+.card-subtitle{
+    text-align: center;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    font-size: 1.3rem;
 }
 
 .card-text{
